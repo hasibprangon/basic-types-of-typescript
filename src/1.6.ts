@@ -14,7 +14,7 @@ const addArrow = (num1: number, num2: number): number => num1 + num2;
 const person: {
     myName: string;
     balance: number;
-    addBalance(balance : number) : number;
+    addBalance(balance: number): number;
 } = {
     myName: 'Prangon',
     balance: 0,
@@ -24,15 +24,20 @@ const person: {
 };
 
 
-const person2 : {
-    myName : string;
-    balance : number;
-    addBalance2(balance : number) : string
+const person2: {
+    myName: string;
+    balance: number;
+    addBalance2(balance: number): string
 } = {
-    myName : 'Hasib',
-    balance : 200,
+    myName: 'Hasib',
+    balance: 200,
     addBalance2(balance) {
         return `My balance is ${this.balance + balance}`;
     }
 };
+
+const arr: number[] = [1, 2, 3, 4, 5];
+
+const newArr : number[] = arr.map((elem : number) : number =>
+    elem * elem)
 
